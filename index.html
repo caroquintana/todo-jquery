@@ -6,49 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Google Font -->
-	<link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">  
 	<!-- Materialize -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.css">
 	<!-- Css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<header class="container">
+	<header class="container titulo">
 		<div class="row">
-			<div class="col s12">
-				<h1>To Do App</h1>
+			<div class="col s12 center">
+				<h1>TO DO APP</h1>
 			</div>
 		</div>
 	</header>
-	<section class="container">
+	<section class="container formulario">
 		<div class="row">
 			<div class="col offset-s2 s8">
-				<form>
-					<input type="text" id="ingreso" name="almuerzo" placeholder="Ingresar la tarea">
-					<h4>To Do Items:</h4>
-  					<div>
-    					<input type="checkbox" id="textalmuerzo" name="almuerzo" value="almuerzo">
-    					<label for="textalmuerzo">Hacer almuerzo</label>
-    					<button type="submit">Remove</button>
-  					</div>
-  					<div>
-    					<input type="checkbox" id="codear" name="codear" value="codear">
-    					<label for="codear">Codear todo app</label>
-    					<button type="submit">Remove</button>
-  					</div>
- 					<div>
-    					<input type="checkbox" id="dictar" name="dictar" value="dictar">
-    					<label for="dictar">Dictar clase TODO</label>
-    					<button type="submit">Remove</button>
-  					</div>
-  					<div>
-    					<input type="checkbox" id="comprar" name="comprar" value="comprar">
-    					<label for="comprar">Comprar leche</label>
-    					<button type="submit">Remove</button>
-  					</div>
-  					<hr>
-  					<h4>Completed Items:</h4>
+				<form name="toDoList">
+					<input type="text" id="listItem"" name="ListItem"" placeholder="Ingresar tarea"/>
+					<h4>TO DO ITEMS:</h4>
+					
+					<hr>
 				</form>
+				<ul id="todo"></ul>
+					<hr>
+  					<h4>COMPLETED ITEMS:</h4>
 			</div>
 		</div>
 		
