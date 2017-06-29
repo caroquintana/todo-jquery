@@ -40,3 +40,8 @@ label.checkbox{
   color: crimson;
   font-size: 18px;
 }
+
+.strike {
+  text-decoration: line-through;
+}
+

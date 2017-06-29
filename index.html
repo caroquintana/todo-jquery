@@ -23,18 +23,18 @@
 	<section class="container formulario">
 		<div class="row">
 			<div class="col offset-s2 s8">
-				<form name="toDoList">
-					<input type="text" id="listItem"" name="ListItem"" placeholder="Ingresar tarea"/>
-					<h4>TO DO ITEMS:</h4>
-					
-					<hr>
+				<form id="formtoDoList" class="formtoDoList">
+    				<input type="text" id="new-item" class="new-item" name="todo" placeholder="Ingresar tarea" />	
 				</form>
-				<ul id="todo"></ul>
-					<hr>
-  					<h4>COMPLETED ITEMS:</h4>
+  				<h4>TO DO ITEMS:</h4>
+  				<hr>
+				<form id="form-todo-list">
+					<ul id="todo-list" class="todo-list"></ul>
+				</form>
+  				<h4>COMPLETED ITEMS:</h4>
+  				<hr>
 			</div>
-		</div>
-		
+		</div>	
 	</section>
 	
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
