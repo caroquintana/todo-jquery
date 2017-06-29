@@ -6,7 +6,7 @@ $(function() {
     function addListItem(e) {
       if(e.type==="keydown" && e.which !== 13) return;
       e.preventDefault(); // Don't submit
-      $list.append("<li><input type='checkbox' id='checkbox" + $input.val() +"' value='none' name='check'><label class='checkbox' for='checkbox" + $input.val()  + "'>" + $input.val() + "</label><input type='submit' id='eliminar' value='Remove'></li>"); 
+      $list.append("<li><input type='checkbox' id='checkbox" + $input.val() +"' value='none' name='check'><label class='checkbox' for='checkbox" + $input.val()  + "'>" + $input.val() + "</label><a class='waves-effect waves-light btn' id='eliminar'>remove</a></li>"); 
       $input.val(""); // Reset input
     }
     $("#listItem").keydown(addListItem);
